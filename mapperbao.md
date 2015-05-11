@@ -1,13 +1,14 @@
 # mapper包
 
-mapper包用来存放数据库基本操作的接口，它们都继承自`org.siqisource.stone.orm.MybatisMapper<T>`接口,其中T代表的数据库表对应的`model`类。
+mapper包用来存放数据库操作的接口，这些接口都应继承自`org.siqisource.stone.orm.MybatisMapper<T>`,其中T代表的数据库表对应的`model`类。mapper包只存放接口，不需要写实现类，但是要在mapper接口对应的mapper.xml配置文件中，写上12条sql语句，以使其支持从`MybatisMapper`继承来的12个方法。
+这个写了12条sql语句的mapper.xml文件，应该放在项目的`src/main/resources/mappers`目录下，我们在写完后一般不要去改动它。
 
-`MybatisMapper`有12个方法，对应数据库的增删改查四个操作。
+附：`MybatisMapper`有12个方法，对应数据库的增删改查四个操作。
 
 **新增(3)：**
 <table>
     <tr>
-    <th>方法名</th><th>用途</th>
+    <th witdh='50%'>方法名</th><th witdh='50%'>用途</th>
     </tr>
     <tr>
     <td> insert(T model)</td>
