@@ -33,12 +33,8 @@ mapper包用来存放数据库基本操作的接口，它们都继承自`org.siq
     <td>根据id删除数据库的记录,支持输入多个id（联合主键）。</td>
     </tr>
     <tr>
-    <td>deleteBatch(@Param("condition") Condition condition)</td>
-    <td>向数据库批量插入多条记录。</td>
-    </tr>
-    <tr>
-    <td>insertPartitive(@Param("fields") PartitiveFields fields)</td>
-    <td>向数据库插入一条记录，单仅设置fields参数中包含的列的值。</td>
+    <td>deleteBatch(Condition condition)</td>
+    <td>根据条件从数据库删除多条记录。</td>
     </tr>
 </tbale>
 
