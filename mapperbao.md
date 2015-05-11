@@ -5,10 +5,14 @@ mapper包用来存放数据库操作的接口，这些接口都应继承自`org.
 
 附：`MybatisMapper`有12个方法，对应数据库的增删改查四个操作。
 
-**新增(3)：**
 <table>
     <tr>
-    <th witdh='50%'>方法名</th><th witdh='50%'>用途</th>
+    <th>方法名</th><th>用途</th>
+    </tr>
+    <tr>
+    <td colspan="2">
+    新增（3）
+    </td>
     </tr>
     <tr>
     <td> insert(T model)</td>
@@ -22,12 +26,10 @@ mapper包用来存放数据库操作的接口，这些接口都应继承自`org.
     <td>insertPartitive(@Param("fields") PartitiveFields fields)</td>
     <td>向数据库插入一条记录，单仅设置fields参数中包含的列的值。</td>
     </tr>
-</tbale>
-
-**删除(2)：**
-<table>
     <tr>
-    <th>方法名</th><th>用途</th>
+    <td>
+    删除（2）
+    </td>
     </tr>
     <tr>
     <td> delete(Object... id)</td>
