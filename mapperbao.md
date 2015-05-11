@@ -2,7 +2,7 @@
 
 mapper包用来存放数据库基本操作的接口，它们都继承自`org.siqisource.stone.orm.MybatisMapper<T>`接口,其中T代表的数据库表对应的`model`类。
 
-`MybatisMapper`有13个方法，对应数据库的增删改查四个操作。
+`MybatisMapper`有12个方法，对应数据库的增删改查四个操作。
 
 **新增(3)：**
 <table>
@@ -54,6 +54,29 @@ mapper包用来存放数据库基本操作的接口，它们都继承自`org.siq
     <tr>
     <td>updateBatch(PartitiveFields fields,Condition condition)</td>
     <td>根据条件批量更新指定的字段</td>
+    </tr>
+</tbale>
+
+**查询(4)：**
+<table>
+    <tr>
+    <th>方法名</th><th>用途</th>
+    </tr>
+    <tr>
+    <td>T read(Object... id)</td>
+    <td>根据主键读出记录。</td>
+    </tr>
+    <tr>
+    <td>int count(Condition condition)</td>
+    <td>返回符合条件的记录数量</td>
+    </tr>
+    <tr>
+    <td>List&lt;T> list(Condition condition)</td>
+    <td>返回全部符合条件的记录列表</td>
+    </tr>
+    <tr>
+    <td>List&lt;T> list(Condition condition,RowBounds rowBounds)</td>
+    <td>返回rowBounds指定页码的符合条件的记录列表</td>
     </tr>
 </tbale>
 
