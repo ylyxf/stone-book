@@ -38,4 +38,23 @@ mapper包用来存放数据库基本操作的接口，它们都继承自`org.siq
     </tr>
 </tbale>
 
+**修改(3)：**
+<table>
+    <tr>
+    <th>方法名</th><th>用途</th>
+    </tr>
+    <tr>
+    <td> update(T model)</td>
+    <td>根据主键更新其它所有字段。</td>
+    </tr>
+    <tr>
+    <td>updatePartitive(PartitiveFields fields, Object... id)</td>
+    <td>根据主键更新指定的字段</td>
+    </tr>
+    <tr>
+    <td>updateBatch(PartitiveFields fields,Condition condition)</td>
+    <td>根据条件批量更新指定的字段</td>
+    </tr>
+</tbale>
+
 
