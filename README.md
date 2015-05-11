@@ -1,2 +1,2 @@
 # stone-book
-develop handbook for stone
+这是一本stone的开发手册。
