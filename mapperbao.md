@@ -11,7 +11,7 @@ mapper包用来存放数据库操作的接口，这些接口都应继承自`org.
     </tr>
     <tr>
     <td>
-    新增（3）
+    *新增（3）*
     </td>
     <td>
     </td>
@@ -30,7 +30,7 @@ mapper包用来存放数据库操作的接口，这些接口都应继承自`org.
     </tr>
     <tr>
     <td>
-    删除（2）
+    *删除（2）*
     </td>
     <td>
     </td>
@@ -43,13 +43,12 @@ mapper包用来存放数据库操作的接口，这些接口都应继承自`org.
     <td>deleteBatch(Condition condition)</td>
     <td>根据条件从数据库删除多条记录。</td>
     </tr>
-</tbale>
-
-**修改(3)：**
-<table>
     <tr>
-    <th>方法名</th><th>用途</th>
-    </tr>
+    <td>
+    *修改（3）*
+    </td>
+    <td>
+    </td>
     <tr>
     <td> update(T model)</td>
     <td>根据主键更新其它所有字段。</td>
@@ -62,13 +61,13 @@ mapper包用来存放数据库操作的接口，这些接口都应继承自`org.
     <td>updateBatch(PartitiveFields fields,Condition condition)</td>
     <td>根据条件批量更新指定的字段</td>
     </tr>
-</tbale>
-
-**查询(4)：**
-<table>
     <tr>
-    <th>方法名</th><th>用途</th>
-    </tr>
+    <td>
+    *查询（4）*
+    </td>
+    <td>
+    </td>
+    <tr>
     <tr>
     <td>T read(Object... id)</td>
     <td>根据主键读出记录。</td>
