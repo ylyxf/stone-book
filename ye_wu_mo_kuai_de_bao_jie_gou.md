@@ -4,10 +4,10 @@
 
 他们及相关文件在业务系统中的位置大概如下图所示：
 
-
+<code>
 groupId
     /artifactId
-        /moduleId
-
+    /moduleId
+</code>
 
 
