@@ -2,7 +2,7 @@
 
 mapper包用来存放数据库操作的接口，这些接口都应继承自`org.siqisource.stone.orm.MybatisMapper<T>`,其中T代表的数据库表对应的`model`类。
 
-mapper包只存放接口，不需要写实现类，但是要在mapper接口对应的mapper.xml配置文件中，写上12条sql语句，以使其支持从`MybatisMapper`继承来的12个方法。这个写了12条sql语句的mapper.xml文件，应该放在项目的`src/main/resources/mappers`目录下，我们在写完后一般不要去改动它。
+mapper包只存放接口，不需要写实现类，但是要在mapper接口对应的mapper.xml文件中，写上12条sql语句，以使其支持从`MybatisMapper`继承来的12个方法。这个写了12条sql语句的mapper.xml文件，应该放在项目的`src/main/resources/mappers`目录下，我们在写完后一般不要去改动它。
 
 以订单系统为例：我们应该在mapper包下面增加OrderMapper.java文件，同时在`src/main/resources/mappers`目录下增加OrderMapper.xml文件。
 
@@ -18,7 +18,7 @@ mapper包只存放接口，不需要写实现类，但是要在mapper接口对�
 ```
 然后在mapper包下面，新建一个OrderMapper.xml文件，把上一节的那个联表查询的sql写进去。
 
-这样分离后，比较清晰，天然继承的单表操作的sql语句，在一个很远的mappers文件夹里躺着，除非字段变化，否则不要去动它。而联表查询等操作的，则与Mapper.java放在一起。Mapper.java增减方法，这个Mapper.xml也要做相应修改。
+这样分离后，比较清晰，天然继承的单表操作对应的sql语句，在一个很远的mappers文件夹里躺着，除非字段变化，否则不要去动它。而联表查询等操作的sql语句，则与Mapper.java放在同一个包下面。Mapper.java增减方法，这个Mapper.xml也要做相应修改。
 
 附：`MybatisMapper`有12个方法，对应数据库的增删改查四个操作。
 
