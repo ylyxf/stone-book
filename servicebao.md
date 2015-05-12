@@ -51,6 +51,18 @@ ConditonBuilder类的主要作用是构造Condition类，Condition类主要装�
     <td>根据条件从数据库删除多条记录。</td>
     </tr>
     <tr>
+    <td>logicDelete(Object... id)</td>
+    <td>根据id进行逻辑删除，本质是将表的logic_deleted字段设置为true。</td>
+    </tr>
+    <tr>
+    <td>logicDeleteBatch(Condition condition) </td>
+    <td>根据条件进行逻辑删除，本质是将表的logic_deleted字段设置为true。</td>
+    </tr>
+    <tr>
+    <td>logicDeleteBatch(Object[] idList)</td>
+    <td>根据id数组进行逻辑删除，本质是将表的logic_deleted字段设置为true。仅支持单主键的表</td>
+    </tr>
+    <tr>
     <td>
     *修改（4）*
     </td>
@@ -82,6 +94,10 @@ ConditonBuilder类的主要作用是构造Condition类，Condition类主要装�
     <tr>
     <td>T read(Object... id)</td>
     <td>根据主键读出记录。</td>
+    </tr>
+    <tr>
+    <td>T read(Condition condition)</td>
+    <td>根据条件读出一条记录。</td>
     </tr>
     <tr>
     <td>int count(Condition condition)</td>
