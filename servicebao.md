@@ -33,7 +33,7 @@ ConditonBuilder类的主要作用是构造Condition类，Condition类主要装�
     </tr>
     <tr>
     <td>
-    *删除（2）*
+    *删除（3）*
     </td>
     <td>
     </td>
@@ -52,13 +52,17 @@ ConditonBuilder类的主要作用是构造Condition类，Condition类主要装�
     </tr>
     <tr>
     <td>
-    *修改（3）*
+    *修改（4）*
     </td>
     <td>
     </td>
     <tr>
     <td> update(T model)</td>
     <td>根据主键更新其它所有字段。</td>
+    </tr>
+     <tr>
+    <td> updateBatch(List&lt;T> models)</td>
+    <td>根据主键更新每一个model的其它所有字段。</td>
     </tr>
     <tr>
     <td>updatePartitive(PartitiveFields fields, Object... id)</td>
@@ -70,7 +74,7 @@ ConditonBuilder类的主要作用是构造Condition类，Condition类主要装�
     </tr>
     <tr>
     <td>
-    *查询（4）*
+    *查询（5）*
     </td>
     <td>
     </td>
