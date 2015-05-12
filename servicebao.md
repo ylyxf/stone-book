@@ -43,6 +43,10 @@ ConditonBuilder类的主要作用是构造Condition类，Condition类主要装�
     <td>根据id删除数据库的记录,支持输入多个id（联合主键）。</td>
     </tr>
     <tr>
+    <td>deleteBatch(Object[] idList)</td>
+    <td>根据主键id从数据库删除多条记录，仅支持单主键的情况。</td>
+    </tr>
+    <tr>
     <td>deleteBatch(Condition condition)</td>
     <td>根据条件从数据库删除多条记录。</td>
     </tr>
