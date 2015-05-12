@@ -38,10 +38,6 @@ mapper包只存放接口，不需要写实现类，但是要在mapper接口对�
     <td>直接插入单个的javaben，在数据库形成一条记录。</td>
     </tr>
     <tr>
-    <td>insertBatch(List&lt;T> models)</td>
-    <td>向数据库批量插入多条记录。</td>
-    </tr>
-    <tr>
     <td>insertPartitive(@Param("fields") PartitiveFields fields)</td>
     <td>向数据库插入一条记录，单仅设置fields参数中包含的列的值。</td>
     </tr>
