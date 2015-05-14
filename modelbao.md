@@ -20,7 +20,7 @@ select order.* , client.name as client_name ,supplier.name as supplier_name from
 public OrderView extends Order {
 
     private String clientName;
-    
+
     private String supplierName;
 
 }

@@ -8,11 +8,11 @@ Form类：一般情况下，model包的类已经足够为Controller类接收参�
 
 ```
     public OrderForm extends Order {
-    
+
         public Date createDateBegin;
-        
+
         public Date createDateEnd;
-    
+
     }
 ```
 
@@ -24,7 +24,7 @@ public class OrderController {
 
 	@Autowired
 	OrderService service;
-	
+
 	@Autowired
 	ClientService clientService;
 
@@ -32,7 +32,7 @@ public class OrderController {
 	public String list() {
 		return "order/OrderList";
 	}
-	
+
 	@RequestMapping("/order/OrderListData.do")
 	@ResponseBody
 	public List<Order> listData(OrdertForm orderForm) {

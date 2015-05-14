@@ -14,7 +14,7 @@ mapper包只存放接口，不需要写实现类，但是要在mapper接口对�
     @Repository
     public interface OrderMapper extends MybatisMapper<Order>{
         public List<OrderView> listOrder(@Param("condition")Condition condition,@Param("rowBounds") RowBounds rowBounds);
-    } 
+    }
 ```
 然后在mapper包下面，新建一个OrderMapper.xml文件，把上一节的那个联表查询的sql写进去。
 
