@@ -4,4 +4,4 @@
 ```
 select * from user where name = 'yulei' and password = 'yuleipw'
 ```
-那么一个Condition是`name='yulei'`和`password='yuleipw'`。
+那么一个Condition是`name='yulei'`和`password='yuleipw'`的集合。
