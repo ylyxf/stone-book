@@ -1,10 +1,6 @@
 # 创建基于stone的工程
 
-基本的步骤是：
-1. 准备好pgsql数据库。
-2. 通过Eclipse创建一个普通的maven结构的web项目。
-3. 在项目的pom.xml文件中增加stone依赖。
-4. 在Eclipse中运行该项目，通过浏览器查看stone提供的功能。
+
 
 
 ##准备pgsql数据库
