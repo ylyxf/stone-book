@@ -113,3 +113,18 @@ stone-sdk是一个webapp，以war包的方式发布在maven仓库中。我们可
 </project>
 
 ```
+
+我们注意到在tomcat-maven插件中增加了stone-sdk依赖，它的type是war。
+
+我们还注意到，在tomcat-maven插件上，增加了一个contextFile配置，指向了项目根目录下的tomcat-context.xml文件，这个文件用于配置数据源。
+
+通常情况下，一个web应用的数据源要么是应用自身维护，要么是容器通过jndi方式提供。我们在stone开发过程中，优先使用容器数据源，让tomcat帮助我们管理数据源。通过tomcat-context.xml，我们把之前准备的数据库和我们创建的webapp项目关联起来：
+```
+<?xml version='1.0' encoding='utf-8'?>
+<Context>
+	<Resource name="jdbc/hoterp" global="jdbc/hoterp" auth="Container"
+		type="javax.sql.DataSource" driverClassName="org.postgresql.Driver"
+		url="jdbc:postgresql://127.0.0.1:5432/hoterp" username="hoterp"
+		password="hoterp" maxActive="100" maxIdle="20" minIdle="5" maxWait="10000" />
+</Context>
+```
