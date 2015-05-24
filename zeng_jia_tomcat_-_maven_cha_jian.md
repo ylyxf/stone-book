@@ -26,7 +26,7 @@ tomcat提供了一个maven插件，帮助我们结合maven在开发中进行调�
 
 我们在浏览器中输入地址`http://localhost:3234/hoterp/`，会看到Hello World!
 
-以后再需要调试，在工具栏的debug按钮（绿色的小虫子）下拉，即可看到hoterp调试按钮。
+点击Eclipse的Console窗口右上放的红色方块（Terminate）按钮，即可关闭tomcat。以后再需要调试，从Eclipse上方工具栏的debug按钮（绿色的小虫子）下拉，即可看到hoterp调试按钮。
 
 
 
