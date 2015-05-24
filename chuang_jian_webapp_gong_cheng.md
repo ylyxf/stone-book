@@ -22,4 +22,4 @@
 
 最终的项目结构如下图所示：
 
-![Figure 1-7](images/1/建立maven工程第六步.jpg)
+![Figure 1-8](images/1/建立maven工程第六步.jpg)
