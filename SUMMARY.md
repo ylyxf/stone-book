@@ -20,4 +20,5 @@
    * [Order](order)
    * [PartitiveFields](partitivefields)
    * [SqlKey](sqlkey)
+* stone-sdk
 
