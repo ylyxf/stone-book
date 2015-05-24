@@ -24,7 +24,6 @@ tomcat提供了一个maven插件，帮助我们结合maven在开发中进行调�
 
 ![Figure 1-9](images/1/Eclipse建立调试按钮.jpg)
 
-
 我们在浏览器中输入地址`http://localhost:3234/hoterp/`，会看到Hello World!
 
 以后再需要调试，在工具栏的debug按钮（绿色的小虫子）下拉，即可看到hoterp调试按钮。
