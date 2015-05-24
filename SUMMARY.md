@@ -6,6 +6,7 @@
    * [创建webapp工程](chuang_jian_webapp_gong_cheng.md)
    * [增加stone依赖](zeng_jia_stone_yi_lai.md)
    * [增加tomcat-maven插件](zeng_jia_tomcat_-_maven_cha_jian.md)
+   * 配置stone-sdk
 * [业务模块的包结构](ye_wu_mo_kuai_de_bao_jie_gou.md)
    * [model包](modelbao.md)
    * [mapper包](mapperbao.md)
