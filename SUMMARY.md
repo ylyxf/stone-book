@@ -8,7 +8,7 @@
    * [增加stone依赖](zeng_jia_stone_yi_lai.md)
    * [增加tomcat-maven插件](zeng_jia_tomcat_-_maven_cha_jian.md)
    * [配置stone-sdk](pei_zhi_stone_-_sdk.md)
-* 使用stone-sdk
+* [使用stone-sdk](shi_yong_stone_-_sdk.md)
 * [业务模块的包结构](ye_wu_mo_kuai_de_bao_jie_gou.md)
    * [model包](modelbao.md)
    * [mapper包](mapperbao.md)
