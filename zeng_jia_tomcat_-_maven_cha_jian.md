@@ -22,5 +22,7 @@ tomcat提供了一个maven插件，帮助我们结合maven在开发中进行调�
 在Eclipse中，启动tomcat的maven插件：
 在Eclipse菜单中选择run->Debug Configurations,在弹出的窗口中，选择Maven Build 节点，点击左上方的加号按钮，在右侧填写好名字、通过Browse Workspace按钮选择hoterp工程，在Goals中填写`tomcat7:run`，点击apply保存设置，点击Debug按钮，即可开启tomcat。
 
+我们在浏览器中输入地址`http://localhost:3234/hoterp/`，会看到Hello World!
+
 
 
